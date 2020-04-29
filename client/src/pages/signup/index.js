@@ -103,7 +103,7 @@ function Home() {
     return (
         <body className="main-body" >
         <Form className="loginForm signUpForm" id="create-course-form" onSubmit={handleSubmit}>
-                <h1 className="h3"><img className="logo" src={logo}></img></h1>
+                <h1 className="h3"><img className="logo"id="logo" src={logo}></img></h1>
 
                 <FormGroup className="form-group">
                     <Input 
@@ -128,7 +128,7 @@ function Home() {
 
                     <Input
                     className="form-control password-input"
-                    id="password"
+                    id="passwordS"
                     type="password"
                     placeholder="Password"
                     name="password"
@@ -157,7 +157,7 @@ function Home() {
                     
                     </div>
 
-                    <button type="submit" className="subBut log-btn" >Sign Up</button>
+                    <button type="submit" className="subBut log-btn" id="log-btn" >Sign Up</button>
                     <Alert color={alertText.type} style={{ opacity: !alertText.there ? 0 : 1}}>
                         {alertText.text}
                     </Alert>

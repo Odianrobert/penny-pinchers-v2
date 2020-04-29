@@ -10,33 +10,44 @@
     height: 100%;
   }
   
-  .main-body {
-    background-image: linear-gradient(green, white);
-    height: 100vh;
-    width: 100vw;
-    text-align: center
-}
+
 .h3 {
    margin-bottom: 10vh;
    padding-top: 5vh;
    color: white 
 }
 
-.logo {
-    width: 22vw; 
-    height: 25vh
-}
+
 
 .form-group {
     display: inline-block;
 }
 
-.form-control {
-    width: 25vw;
-    height: 10vh; 
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    
+#email {
+    width: 300px;
+    height: 100px; 
+}
+
+
+#username {
+    width: 300px;
+    height: 100px; 
+}
+
+#password-input {
+    width: 300px;
+    height: 100px; 
+}
+
+#passwordCon-input {
+    width: 300px;
+    height: 100px; 
+}
+
+#log-btn {
+    width: 300px;
+    height: 100px; 
+    margin-bottom: 0;
 }
 
 .username-input:hover {
@@ -77,3 +88,35 @@
     background-color: rgba(7, 151, 7, 0.397);
     color: white;
 }
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        width: 100px;
+        height: 100px; 
+    }
+    #username {
+        width: 270px;
+        height: 60px; 
+    }
+    #email {
+        width: 270px;
+        height: 60px; 
+    }
+    
+    #password-input {
+        width: 270px;
+        height: 60px; 
+    }
+    
+    #passwordCon-input {
+        width: 270px;
+        height: 60px; 
+    }
+
+    #log-btn {
+        width: 250px;
+        height: 50px; 
+        margin-bottom: 0;
+    }
+
+  }

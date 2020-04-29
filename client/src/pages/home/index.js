@@ -102,7 +102,7 @@ function Home(props) {
  return (
     <div className="main-body" >
       <Form className="loginForm" onSubmit={handleSubmit}>
-        <h1 className="h3"><img className="logo" src={logo}></img></h1>
+        <h1 className="h3"><img className="logo" id='logo' src={logo}></img></h1>
              <FormGroup className="form-group">
   
                 <Input
@@ -126,7 +126,7 @@ function Home(props) {
                 />   
             
             <div>   
-                <button type='submit' className='log-btn'>Log In</button>    
+                <button type='submit' id='log-btn' className='log-btn'>Log In</button>    
             </div>
             <Alert color={alertText.type} style={{ opacity: !alertText.there ? 0 : 1}}>
                         {alertText.text}
