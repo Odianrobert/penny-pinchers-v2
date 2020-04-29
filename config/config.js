@@ -1,7 +1,7 @@
 const mysql = require('mysql')
 
 const con = mysql.createConnection({
-    host: 'nba02whlntki5w2p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+    host: 'nba02whlntki5w2p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     port: 3306,
     user: 'e26r4fdvyjgq8e2q',
     password: 'cno40blvzjmydf3p',
