@@ -3,8 +3,8 @@ import openSocket from 'socket.io-client';
 import './ChatApp.css';
 import Tabs from '../Tabs/Tabs.js'
 import { withGlobalState } from 'react-globally'
-// const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
-const socket = openSocket('localhost:7001');
+const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
+// const socket = openSocket('localhost:7001');
 
 function ChatApp(props) {
 

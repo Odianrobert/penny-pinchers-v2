@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 import { withGlobalState } from 'react-globally'
 import fakeAuth from '../utils/authContext'
 import "./logout-btn.css"
-// const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
-const socket = openSocket('localhost:7001');
+const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
+// const socket = openSocket('localhost:7001');
 
 function AuthButton(props) {
   let history = useHistory();
