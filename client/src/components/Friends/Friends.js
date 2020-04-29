@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { withGlobalState } from 'react-globally'
 import openSocket from 'socket.io-client';
 import ChatApp from '../ChatApp/ChatApp'
-const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
+const socket = openSocket('localhost:7001');
+// const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
 
 function Friends(props) {
     const [ localUser, setLocalUser ] = useState(socket.id)
@@ -25,12 +26,14 @@ function Friends(props) {
     function switchChat(remoteUser, sock) {
         setUser(remoteUser)
         setSockUser(sock)
+        // console.log(localUser)
         socket.emit('switch-chat', {localUser: localUser, remoteUser: remoteUser} )
         setShow(true)
     }
 
     function switchShow() {
         setShow(false)
+        socket.emit('blank-chat', props.globalState.user.username)
     }
 
     return (

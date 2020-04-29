@@ -32,6 +32,23 @@ module.exports = {
             }
         })
     },
+    delSocket2: (username) => {
+        con.query('SELECT userId, socket FROM user WHERE username = ?', [username], (err, results) => {
+            if (err) {console.log(err)
+            } else {
+                // console.log(results)
+                if (results[0]){
+                    con.query('UPDATE user SET socket = null WHERE userId = ?', [results[0].userId], (err, result) => {
+                        if (err) {console.log(err)
+                        } else {
+                            // console.log(result)
+                        }
+                    })
+                }
+                
+            }
+        })
+    },
     listFriends: () => {
         return new Promise(function (fulfill, reject) {
             con.query('SELECT userId, username, socket FROM user', (err, results) => {

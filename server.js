@@ -68,6 +68,15 @@ io.on('connection', client => {
       // io.emit('send-chat-to-client', data.message)
   })
 
+  client.on('blank-chat', function(user) {
+    // console.log(user)
+    const newUser = Promise.resolve(chatDB.findSocket(user))
+      newUser.then(value => {
+        // console.log(value[0].socket)
+        io.to(value[0].socket).emit('clear-chat')
+      })
+  })
+
   client.on('disconnect', function(reason) {
       if (reason === 'io server disconnect') {
           client.connected()
@@ -76,6 +85,10 @@ io.on('connection', client => {
       // save chat to database 
       // console.log('user disconected' + client.id)
       //search database for client.id and delete
+  })
+
+  client.on('logout', function(username) {
+    chatDB.delSocket2(username)
   })
 
 })

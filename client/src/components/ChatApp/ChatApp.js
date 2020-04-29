@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import openSocket from 'socket.io-client';
 import './ChatApp.css';
 import Tabs from '../Tabs/Tabs.js'
-
 import { withGlobalState } from 'react-globally'
-const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
+// const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
+const socket = openSocket('localhost:7001');
 
 function ChatApp(props) {
 
@@ -13,11 +13,16 @@ function ChatApp(props) {
     const [ message, setMessage ] = useState('')
     const [ messages, setMessages ] = useState([])
     
-
+    // useEffect(() => {
+    //     if (props.globalState.user.show) {
+    //         console.log('blanking chat history')
+    //         setMessages([])
+    //     }
+    // }, [])
   
     useEffect(() => {
         socket.emit('log-user-info', {username: props.globalState.user.username, socket: socket.id })
-        console.log('logging user ' + socket.id)
+        // console.log('logging user ' + socket.id)
     }, [])
 
     useEffect(() => {
@@ -30,13 +35,20 @@ function ChatApp(props) {
 
     useEffect(() => {
         socket.on('send-chat-to-client', function(data) {
-            console.log(data)
+            // console.log(data)
             setMessages(messages => [...messages, data])
         })
     }, [])
 
+    useEffect(() => {
+        socket.on('clear-chat', function() {
+            // alert('clearing chat window')
+            setMessages([])
+        })
+    }, [])
+
     function sendChat() {
-        console.log('remote = ' + props.sock)
+        // console.log('remote = ' + props.sock)
         socket.emit('send-chat-to-server', { message: message, remoteUser: props.sock, localUser: localUser }) // add remote.username local.username for display 
         setMessage('')
     }
