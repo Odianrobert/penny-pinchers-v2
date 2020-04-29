@@ -6,7 +6,7 @@ export default {
     return axios({
         method: 'post',
         headers: { 'content-type': 'application/json' },
-        url: 'http://localhost:7001/user',
+        url: '/user',
         data: postdata
       })
 
@@ -16,7 +16,7 @@ export default {
     return axios({
         method: 'post',
         headers: { 'content-type': 'application/json' },
-        url: 'http://localhost:7001/api/login',
+        url: '/api/login',
         data: postdata
       })
 
@@ -31,7 +31,7 @@ export default {
     return axios({
         method: 'post',
         headers: { 'content-type': 'application/json' },
-        url: 'http://localhost:7001/api/user',
+        url: '/api/user',
         data: postdata
       })
 
@@ -41,7 +41,7 @@ export default {
     return axios({
         method: 'post',
         headers: { 'content-type': 'application/json' },
-        url: 'http://localhost:7001/setBudget',
+        url: '/setBudget',
         data: postdata
       })
   },
@@ -50,7 +50,7 @@ export default {
     return axios({
         method: 'post',
         headers: { 'content-type': 'application/json' },
-        url: 'http://localhost:7001/setBills',
+        url: '/setBills',
         data: postdata
       })
   },
@@ -59,7 +59,7 @@ export default {
     return axios({
           method: 'post',
           headers: { 'content-type': 'application/json' },
-          url: 'http://localhost:7001/addBills',
+          url: '/addBills',
           data: postdata
         })
     },
@@ -67,7 +67,7 @@ export default {
       return axios({
             method: 'post',
             headers: { 'content-type': 'application/json' },
-            url: 'http://localhost:7001/recentBills',
+            url: '/recentBills',
             data: postdata
           })
     },
@@ -76,7 +76,7 @@ export default {
     return axios({
       method: 'post',
       headers: { 'content-type': 'application/json' },
-      url: `http://localhost:7001/getleaders`
+      url: `/getleaders`
     })
   }
 
