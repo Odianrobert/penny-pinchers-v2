@@ -81,5 +81,5 @@ io.on('connection', client => {
 })
 
 server.listen(PORT, () => {
-    console.log('http://localhost:' + PORT)
+    console.log('listening on ' + PORT)
 })

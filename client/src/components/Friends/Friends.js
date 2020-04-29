@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { withGlobalState } from 'react-globally'
 import openSocket from 'socket.io-client';
 import ChatApp from '../ChatApp/ChatApp'
-const socket = openSocket('http://localhost:7001');
+const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
 
 function Friends(props) {
     const [ localUser, setLocalUser ] = useState(socket.id)
