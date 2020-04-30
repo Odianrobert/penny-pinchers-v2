@@ -13,28 +13,32 @@ npm run dev
 
 This will now open an instance of the app in your localhost.
 Built With
-•	React – User interface library
-•	Reactstrap – Bootstrap styling components for React
-•	Bootstrap – CSS framework
-•	Mysql – Relational database management system
-•	Express – Server framework
-•	Express-Session – Gives users a unique id
-•	Cors – Cross-origin resource sharing
-•	Passport – Authentication middleware for Node.js
-•	Socket.io – Realtime, bi-directional communication between web clients and servers
-•	React-Router – Routing Library for React
-•	Bcrypt – Security platform for passwords
-•	MDBProgress – CSS library for React
-
+<ul>
+<li>	React – User interface library </li>
+<li>	Reactstrap – Bootstrap styling components for React </li>
+<li>	Bootstrap – CSS framework </li>
+<li>	Mysql – Relational database management system </li>
+<li>	Express – Server framework </li>
+<li>	Express-Session – Gives users a unique id </li>
+<li>	Cors – Cross-origin resource sharing </li>
+<li>	Passport – Authentication middleware for Node.js </li>
+<li>	Socket.io – Realtime, bi-directional communication between web clients and servers </li>
+<li>	React-Router – Routing Library for React </li>
+<li>	Bcrypt – Security platform for passwords </li>
+<li>	MDBProgress – CSS library for React </li>
+</ul>
 Contributors
-•	Eric Schwelgin
-•	Jacob Whisler
-•	Josh Boswell
-•	Robert Odian
-•	Will Coan
-
+<ul>
+<li>	Eric Schwelgin </li>
+<li>	Jacob Whisler </li>
+<li>	Josh Boswell </li>
+<li>	Robert Odian </li>
+<li>	Will Coan </li>
+</ul>
 Acknowledgments
-•	Dustin Hershman
-•	Eli Steiger
-•	Stack Overflow
+<ul>
+<li>	Dustin Hershman </li>
+<li>	Eli Steiger </li>
+<li>	Stack Overflow </li>
+</ul>
 
