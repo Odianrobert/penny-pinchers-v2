@@ -1,10 +1,4 @@
-.main-body {
-    background-image: linear-gradient(green, white);
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    
-}
+
 
 .main-div {
     color: white;
@@ -81,5 +75,15 @@
 .bills-div {
     height: 400px;
     overflow-y: scroll;
-    overflow-x: hidden;
+   
 }
+
+@media only screen and (max-width: 499px) {
+   
+    .bills-div {
+        height: 400px;
+        width: 300px;
+        overflow-y: scroll;
+       
+    }
+  }

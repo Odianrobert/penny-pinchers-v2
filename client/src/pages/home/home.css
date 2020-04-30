@@ -36,7 +36,7 @@
 
 #password {
     width: 300px;
-    height: 70px; 
+    height: 100px; 
 }
 
 .username-input:hover {
@@ -83,8 +83,8 @@
 }
 
 #log-btn {
-    width: 300px;
-    height: 70px; 
+    width: 270px;
+    height: 60px; 
     margin-bottom: 0;
 }
 .log-btn:hover {

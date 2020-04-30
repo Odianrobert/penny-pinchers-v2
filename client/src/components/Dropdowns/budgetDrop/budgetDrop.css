@@ -12,3 +12,10 @@ export default {
       backgroundColor: 'red'
     }
   } */
+
+  /* @media only screen and (max-width: 499px) {
+    .butDrop {
+      margin-top: 500px;
+    }
+
+  } */

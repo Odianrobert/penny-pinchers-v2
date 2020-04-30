@@ -29,7 +29,7 @@ return (
       <Form>
         <SetBillsDrop/>
       </Form>
-      <img className="logo" style={{marginTop: '160px'}} src={logo}></img> 
+      <img className="logo" id="logo" style={{marginTop: '160px'}} src={logo}></img> 
     </div>
   </div>
 )   

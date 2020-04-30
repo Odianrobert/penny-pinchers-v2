@@ -7,7 +7,7 @@ function ProgressBars(props) {
     return (
     
     <div>
-      <h2>Percentage of Budget Used</h2><br />
+      <h2 className="percHead">Percentage of Budget Used</h2><br />
       <h4>
         Groceries
       </h4>

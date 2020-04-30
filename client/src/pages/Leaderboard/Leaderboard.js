@@ -57,7 +57,7 @@ function Leaderboard(props) {
             <NavBar />
         {/* <div className="container"> */}
         
-        <h2><img className="leader-logo" src={logo}></img></h2>
+        <h2><img className="leader-logo" id="logo" src={logo}></img></h2>
         <Card body className='text-left card-div'>
             <CardTitle className='leader-title'>Leaderboard</CardTitle>
         </Card>

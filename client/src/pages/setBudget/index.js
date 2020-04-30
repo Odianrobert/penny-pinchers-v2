@@ -29,7 +29,7 @@ function SetBudget () {
         <SetBudgetDrop/>
       </Form>
     </div>
-    <img className="logo" style={{marginTop: '160px'}} src={logo}></img>
+    <img className="logo" id="logo" style={{marginTop: '160px'}} src={logo}></img>
   </div>
   )   
 

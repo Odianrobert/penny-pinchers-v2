@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Form, Col, Row, Button, Label, Input, InputGroup, InputGroupAddon, } from 'reactstrap';
 import API from '../../../utils/API'
 import { withGlobalState } from 'react-globally'
-
+import './budgetDrop.css'
 const setBudgetDrop = (props) => {
     const [dropdownOpen, setOpen] = useState(false);
     const [val, setVal] = useState('')
@@ -34,9 +34,9 @@ function onChange(event) {
 
 return (
     <Form>
-  <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+  <ButtonDropdown className="butDrop" isOpen={dropdownOpen} onClick={toggle}>
     <DropdownToggle caret>
-    {show ? val : 'Set Your Budgets'}
+    {show ? val : 'Set Your Budgets '}
     </DropdownToggle>
     <DropdownMenu>
       <DropdownItem onClick={() => clicked('Groceries Budget')}>Grocery </DropdownItem>
