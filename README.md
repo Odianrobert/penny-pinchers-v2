@@ -22,6 +22,7 @@ Installation will occur in both the root and client folders, then run this comma
 npm run dev
 
 This will now open an instance of the app in your localhost.
+<p>
 Built With
 <ul>
 <li>	React – User interface library </li>
@@ -37,6 +38,7 @@ Built With
 <li>	Bcrypt – Security platform for passwords </li>
 <li>	MDBProgress – CSS library for React </li>
 </ul>
+</p>
 Contributors
 <ul>
 <li>	Eric Schwelgin </li>
