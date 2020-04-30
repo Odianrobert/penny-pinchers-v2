@@ -20,8 +20,9 @@ npm I; cd client; npm i
 Installation will occur in both the root and client folders, then run this command in the root folder:
 </p>
 npm run dev
-
+<p>
 This will now open an instance of the app in your localhost.
+</p>
 <p>
 Built With
 <ul>
