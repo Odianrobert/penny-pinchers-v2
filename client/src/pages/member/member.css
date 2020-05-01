@@ -73,7 +73,9 @@
 }
 
 .bills-div {
+    height: 600px;
     overflow-y: scroll;
+    overflow-x: hidden;
    
 }
 
