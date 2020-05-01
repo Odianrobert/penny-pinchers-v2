@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { withGlobalState } from 'react-globally'
 import openSocket from 'socket.io-client';
 import ChatApp from '../ChatApp/ChatApp'
+import './style.css'
 // const socket = openSocket('localhost:7001');
 const socket = openSocket('https://penny-pinchers-v2.herokuapp.com/');
 
@@ -37,20 +38,22 @@ function Friends(props) {
     }
 
     return (
-    <div className="chatApp">
+        <div className="chatApp">
         
         <div className="onOff" style={show ?{visibility:"hidden"}:{visibility:"visible"}}>
           <div className="online">
             <h4 className="onlineHead">Online</h4>
+            <div className="onlineList">
             <ul>
                 {friendList.map(item => (
                     item.socket ? <li key={item.userId} className="friendList"onClick={() => switchChat(item.username, item.socket)}>{item.username}</li> : undefined
                 ))}
             </ul>
+            </div>
           </div>
           <div className="offline">
             <h4 className="onlineHead">Offline</h4>
-                <ul>
+                <ul className="offlineList">
                 {friendList.map(item => (
                     !item.socket ? <li key={item.userId} className="friendListOff">{item.username}</li> : undefined
                 ))}

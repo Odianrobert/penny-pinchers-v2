@@ -82,9 +82,9 @@
 .messages {
     clear: both;
     
-    height: 150px;
+    height: 140px;
     margin-bottom: 0;
-
+    overflow-y: scroll;
 }
 
 .message {
@@ -103,7 +103,7 @@
 
 .chat-main {
     visibility: hidden;
-    margin-top: -250px;
+    margin-top: -270px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -113,7 +113,9 @@
 
     .chat-main{
         width: 100%;
-     
+        z-index: 1;
+        margin-top: -500px;
+        height: 100%;
     }
 
     .messages {
@@ -127,9 +129,12 @@
         
    
     }
+    
     .chatty {
         width: 100%;
+ 
     }
+    
 
     .sendMsg {
         
@@ -147,5 +152,3 @@
 
 
   }
-
-

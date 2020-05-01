@@ -1,4 +1,6 @@
-
+.main-body {
+    overflow: hidden;
+}
 
 .main-div {
     color: white;

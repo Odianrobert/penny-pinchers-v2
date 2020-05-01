@@ -1,0 +1,32 @@
+.online {
+    height: 150px;
+
+}
+
+.onlineList {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.offline {
+    height: 140px;
+
+}
+
+.offlineList {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 768px) {
+    .online {
+        height: 300px;
+        overflow-y: scroll;
+    }
+    
+    .offline {
+        height: 250px;
+        overflow-y: scroll;
+    }
+
+  }

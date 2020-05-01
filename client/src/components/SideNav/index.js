@@ -105,7 +105,7 @@ function SideNav() {
         <div className="hiii">
             <NavbarToggler className="toggleMe" onClick={toggle}><i class="fa fa-users" aria-hidden="true"></i><span className="friends"> Friends</span></NavbarToggler>
             <Collapse isOpen={isOpen} >
-            <Nav className="mr-auto" navbar>
+            <Nav className="m-aut" navbar>
             <Friends />
             </Nav>
             
