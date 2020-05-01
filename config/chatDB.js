@@ -4,7 +4,7 @@ module.exports = {
     addSocket: (data) => {
         con.query('SELECT userId, username FROM user WHERE username = ?',[data.username], (err, results) => {
             if (err) {console.log(err)
-            } else if (data[0]) {
+            } else if (results[0]) {
                 // console.log(results[0].userId)
                 con.query(`UPDATE user SET socket = ? WHERE userId = ?`,[data.socket, results[0].userId], (err, result) => {
                     if(err) {console.log(err)
