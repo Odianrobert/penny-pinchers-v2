@@ -101,9 +101,9 @@ function Home() {
     }
 
     return (
-        <body className="main-body" >
+        <body className="man-body" >
         <Form className="loginForm signUpForm" id="create-course-form" onSubmit={handleSubmit}>
-                <h1 className="h3"><img className="logo"id="logo" src={logo}></img></h1>
+                <h1 className="h3"><img className="logo"id="logoSignup" src={logo}></img></h1>
 
                 <FormGroup className="form-group">
                     <Input 
@@ -118,7 +118,7 @@ function Home() {
 
                     <Input
                     className="form-control username-input"
-                    id="username"
+                    id="usernameS"
                     type="text"
                     placeholder="Username"
                     name="username"
