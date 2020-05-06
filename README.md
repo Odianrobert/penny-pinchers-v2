@@ -56,6 +56,8 @@ This will now open an instance of the app in your localhost.
 <li>	Eli Steiger </li>
 <li>	Stack Overflow </li>
 </ul>
+<h4>Here is the link to our deployed app:</h4>
+<h5>https://penny-pinchers-v2.herokuapp.com/</h5>
 
 <img src='https://github.com/eschwelgin/penny-pinchers-v2/blob/master/penny-pinchers01.png' />
 
