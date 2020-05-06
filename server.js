@@ -75,6 +75,7 @@ io.on('connection', client => {
         // console.log(value[0].socket)
         io.to(value[0].socket).emit('clear-chat')
       })
+      .catch(console.log('server error line 76'))
   })
 
   client.on('disconnect', function(reason) {
