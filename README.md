@@ -57,3 +57,9 @@ This will now open an instance of the app in your localhost.
 <li>	Stack Overflow </li>
 </ul>
 
+https://github.com/eschwelgin/penny-pinchers-v2/blob/master/penny-pinchers01.png
+
+https://github.com/eschwelgin/penny-pinchers-v2/blob/master/penny-pinchers02.png
+
+https://github.com/eschwelgin/penny-pinchers-v2/blob/master/penny-pinchers03.png
+
